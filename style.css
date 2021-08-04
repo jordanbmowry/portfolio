@@ -76,6 +76,11 @@ a:active {
   color: #2a190d;
 }
 
+a::after {
+  color: #3f2615;
+  text-decoration: none;
+}
+
 hr {
   margin: 8rem 0;
 }

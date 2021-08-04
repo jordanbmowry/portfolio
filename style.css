@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(images/joe-woods-4Zaq5xY5M_c-unsplash-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  height: 9rem;
+  background-color: #7e553a;
+  display: flex;
+  justify-content: center;
+  color: #f1f1f1;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+}
+
+main {
+  background-color: rgba(162, 165, 167, 0.4);
+  width: 80%;
+}
+
+.wrapper-column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.wrapper-row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4.5rem;
+}
+
+#profile-photo {
+  margin: 5rem auto 3rem auto;
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
+}
+
+ul {
+  margin: 0 auto;
+  width: 25%;
+  margin-bottom: 2rem;
+}
+
+li {
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f2615;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #2a190d;
+}
+
+hr {
+  margin: 8rem 0;
+}
+
+.about-me {
+  width: 80%;
+  text-align: center;
+}
+
+div .about-me p {
+  margin: 2rem 0;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: space-around;
+}
+
+i {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #000;
+}
+
+#contact {
+  align-items: center;
+}
+
+#contact ol {
+  width: 50%;
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  height: 9rem;
+  background-color: #7e553a;
+  color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+}

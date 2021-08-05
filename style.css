@@ -1,14 +1,15 @@
+/* select all elements to have box-sizing: border-box */
 * {
   box-sizing: border-box;
 }
-
+/* select all elements in body to have Arial font and a background image */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(images/joe-woods-4Zaq5xY5M_c-unsplash-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* select the header and gives it a height, background color, changed to text to a lighter color, display flex, and centered it. */
 header {
   height: 9rem;
   background-color: #7e553a;
@@ -17,103 +18,102 @@ header {
   color: #f1f1f1;
 }
 
+/* set all h1 and h2 elements be the same size */
 h1,
 h2 {
   font-size: 2rem;
 }
-
+/* gave main a gray color with some opacity and a with of 80% of the parent element's width */
 main {
   background-color: rgba(162, 165, 167, 0.4);
   width: 80%;
 }
-
+/* select the wrapper-column class set it to display flex, centered it, and shifted the child elements within into a column */
 .wrapper-column {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
+/* select the wrapper-row class set it to display flex, center it, and shift the child elements within into a row */
 .wrapper-row {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
 }
-
+/* select the h1 element with a class of logo to have the Open Sans Condensed font imported from Google fonts */
 .logo {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 4.5rem;
 }
-
+/* select id profile-photo and gave it some margin for top and bottom to space it out and auto for left and right to center it, used border-radius 50% to center it*/
 #profile-photo {
   margin: 5rem auto 3rem auto;
   height: 35rem;
   width: 35rem;
   border-radius: 50%;
 }
-
+/* select all ul elements and assigned margin of 0 for top and bottom and auto left and right to center it with a width of 25% of it's parent element's width */
 ul {
   margin: 0 auto;
   width: 25%;
   margin-bottom: 2rem;
 }
-
+/* select all li elements and gave it padding of 1rem (16px) top and bottom and 0 left with bold font */
 li {
   padding: 1rem 0;
   font-weight: bold;
-}
-
-a:link {
+}article
   text-decoration: none;
   color: #3f2615;
 }
-
+/* use a pseudo selector to target the a tag in hover state and took away the default underline */
 a:hover {
   text-decoration: underline;
 }
-
+/* used a pseudo selector to target the a tag in active state and change the color when the user clicks on it */
 a:active {
   color: #2a190d;
 }
-
+/* use a pseudo selector to target the a tag in a certain state after the user has clicked on link to keep the original color and not have a underline*/
 a::after {
   color: #3f2615;
   text-decoration: none;
 }
-
+/* gave the horizontal ruler margin of 8 rem top and bottom */
 hr {
   margin: 8rem 0;
 }
-
+/* select the class about me to have a width of 80% of it's parent element's width and center the text */
 .about-me {
   width: 80%;
   text-align: center;
 }
-
+/* select the paragraph tag inside the about-me class nested inside the div to have a margin top and bottom of 2 rem */
 div .about-me p {
   margin: 2rem 0;
 }
-
+/* select hobbies class and set display flex and spaced out all child elements inside the flex container */
 .hobbies {
   display: flex;
   justify-content: space-around;
 }
-
+/* select the icons from font-awesome to set them all to the same size and color and spaced them out with 1rem margin */
 i {
   font-size: 2rem;
   margin: 1rem;
   color: #000;
 }
-
+/* select the contact id and use the flex property to center the children */
 #contact {
   align-items: center;
 }
-
+/* select the ordered list nested inside the contact id and made the width 50% of it's parent's width and got rid of the numbers in the ol*/
 #contact ol {
   width: 50%;
   list-style: none;
 }
-
+/* select the footer and set display to flex, gave it a height of 9rem, made the colors for background and text the same as the header, centered the children with justify-content and align-items*/
 footer {
   display: flex;
   height: 9rem;

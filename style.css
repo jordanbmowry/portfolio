@@ -64,12 +64,12 @@ li {
   padding: 1rem 0;
   font-weight: bold;
 }
-
-article {
+/* select all anchor tags in the normal state and and took away the default underline and change color */
+a:link {
   text-decoration: none;
   color: #3f2615;
 }
-/* use a pseudo selector to target the a tag in hover state and took away the default underline */
+/* use a pseudo selector to target the a tag in hover state and gave underline*/
 a:hover {
   text-decoration: underline;
 }

@@ -3,11 +3,22 @@
   box-sizing: border-box;
 }
 /* select all elements in body to have Arial font and a background image */
+html {
+  background: url(images/joe-woods-4Zaq5xY5M_c-unsplash-min.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(images/joe-woods-4Zaq5xY5M_c-unsplash-min.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 /* select the header and gives it a height, background color, changed to text to a lighter color, display flex, and centered it. */
 header {
@@ -16,6 +27,7 @@ header {
   display: flex;
   justify-content: center;
   color: #f1f1f1;
+  width: 100vw;
 }
 /* select h1, change color, font family, and made text bold. */
 h1 {
@@ -28,11 +40,10 @@ h1 {
 h1,
 h2 {
   font-size: 2rem;
+  margin-bottom: 0;
 }
 /* select h2 element put 4 rem of margin on the bottom of element */
-h2 {
-  margin-bottom: 4rem;
-}
+
 /* gave main a gray color with some opacity and a with of 80% of the parent element's width */
 main {
   background-color: rgba(162, 165, 167, 0.4);
@@ -59,15 +70,16 @@ main {
 /* select id profile-photo and gave it some margin for top and bottom to space it out and auto for left and right to center it, used border-radius 50% to center it*/
 #profile-photo {
   margin: 5rem auto 3rem auto;
-  height: 35rem;
-  width: 35rem;
+  max-width: 30%;
   border-radius: 50%;
+  object-fit: cover;
 }
 /* select all ul elements and assigned margin of 0 for top and bottom and auto left and right to center it with a width of 25% of it's parent element's width */
 ul {
   margin: 0 auto;
   width: 25%;
   margin-bottom: 2rem;
+  list-style: none;
 }
 /* select all li elements and gave it padding of 1rem (16px) top and bottom and 0 left with bold font */
 li {
@@ -132,6 +144,7 @@ i {
 /* select iframe and rounded the sharp corners a bit */
 iframe {
   border-radius: 5px;
+  max-width: 100%;
 }
 /* select the footer and set display to flex, gave it a height of 9rem, made the colors for background and text the same as the header, centered the children with justify-content and align-items*/
 footer {
@@ -141,4 +154,27 @@ footer {
   color: #f1f1f1;
   justify-content: center;
   align-items: center;
+}
+
+@media all and (max-width: 750px) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 0.75rem;
+  }
+
+  ul {
+    width: 90%;
+  }
+
+  ol {
+    padding: 0;
+  }
+
+  #profile-photo {
+    max-width: 50%;
+  }
 }

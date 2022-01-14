@@ -132,6 +132,36 @@ i {
   margin: 1rem;
   color: #000;
 }
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio-header {
+  margin-bottom: 2rem;
+}
+
+.portfolio__item {
+  background: #7e553a;
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
 /* select the contact id and use the flex property to center the children */
 #contact {
   align-items: center;

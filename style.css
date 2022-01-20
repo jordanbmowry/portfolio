@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: center;
   color: #f1f1f1;
-  width: 100vw;
+  width: 100%;
 }
 /* select h1, change color, font family, and made text bold. */
 h1 {
